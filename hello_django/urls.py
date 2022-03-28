@@ -19,5 +19,9 @@ from catalog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/<nome>/<int:idade>', views.hello)
+    path('hello/<nome>/<int:idade>', views.hello),
+    path('soma/<int:n1>/<int:n2>', views.somaValores),
+    path('subtracao/<int:n1>/<int:n2>', views.subtracaoValores),
+    path('divisao/<int:n1>/<int:n2>', views.divisaoValores),
+    path('multiplicacao/<int:n1>/<int:n2>', views.multiplicacaoValores)
 ]
